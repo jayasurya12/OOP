@@ -23,8 +23,8 @@ public class Inheritance {
         }
 
         // Example: Manager
-        Manager mgr = new Manager("Surya", 30, 100000.0, "Software Engineer", new Date(), 10000.0);
-        mgr.displayEmployeeDetails();
-        System.out.println("Salary of Manager: " + mgr.getSalary());
+        Manager mgr1 = new Manager("Surya", 30, 100000.0, "Software Engineer", new Date(), 10000.0);
+        mgr1.displayEmployeeDetails();
+        System.out.println("Salary of Manager: " + mgr1.getSalary());
     }
 }

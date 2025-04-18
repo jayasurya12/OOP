@@ -1,8 +1,9 @@
 package Modules.Inheritance;
 
+import java.util.Comparator;
 import java.util.Date;
 
-public class Employee {
+public class Employee implements Comparable<Employee> {
     private String name;
     private int age;
     private double salary;
@@ -31,5 +32,13 @@ public class Employee {
         System.out.println("Salary: "+salary);
         System.out.println("Department: "+department);
         System.out.println("Joining Date: "+JoiningData);
+    }
+
+    public  int compareTo(Employee e) {
+        if (salary == e.salary)
+            return 0;
+        if (salary < e.salary)
+            return -1;
+        return 1;
     }
 }
