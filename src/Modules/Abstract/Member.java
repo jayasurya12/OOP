@@ -1,7 +1,7 @@
 package Modules.Abstract;
 
 abstract class Member {
-    private String name;
+    private final String name;
     abstract void welcomeMessage();
 
     public Member(String name) {
